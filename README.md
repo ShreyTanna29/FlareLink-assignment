@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# Modern Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and efficient task management application built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Basic Features
+1. Task Input: Add tasks with a title
+2. Task Deletion: Delete tasks
+3. Task Persistence: Persist tasks in local storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stretch Goals
+1. Task Search: Use a search bar to find tasks
+2. Task Completion: Mark tasks as completed
+3. Priority Setting: Assign a priority level to tasks
+4. Task Sorting: Sort tasks by various criteria
+5. UI Animation: Improve user interface with animations
 
-## Expanding the ESLint configuration
+## Extra features from my side
+- Editing a task: after creation of a task, a user can edit/update it.
+- dark mode and light mode themes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+- React 18
+- TypeScript
+- Vite
+- Redux Toolkit
+- TailwindCSS
+- clsx + tailwind-merge for styling
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/modern-task-manager.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+ ```bash
+cd modern-task-manager
 ```
+```bash
+npm install
+```
+3. Run in dev mode.
+```bash
+npm run dev
+```
+
+## Project Structure
+```bash
+📦 Root
+├── 📂 src/
+│   ├── 📂 lib/
+│   │   └── utils.ts                # Styling utilities with clsx and tailwind-merge
+│   │
+│   ├── 📂 store/
+│   │   ├── store.ts                # Redux store setup with tasks and theme reducers
+│   │   ├── taskSlice.ts            # Task management with CRUD, search, and sorting
+│   │   └── themeSlice.ts           # Theme switching and persistence logic
+│   │
+│   ├── 📂 components/              # React components
+
+```
+
+
+
+## Images and video of the app
+![Screenshot from 2024-11-16 16-00-26](https://github.com/user-attachments/assets/6f26545d-ec81-4d6f-9cd8-eb5f88eb5697)
+
+
+
+![Screenshot from 2024-11-16 16-00-15](https://github.com/user-attachments/assets/b0f538ae-a2eb-4e2d-ac70-4c139157d555)
+
+
+
+[Screencast from 2024-11-16 16-00-52.webm](https://github.com/user-attachments/assets/33f186fb-435e-4bed-8633-f8e081c50503)
+
