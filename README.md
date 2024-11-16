@@ -2,6 +2,9 @@
 
 A sleek and efficient task management application built with React, TypeScript, and Vite.
 
+Visit live app : https://flare-link-assignment.vercel.app
+ 
+
 ## Basic Features
 1. Task Input: Add tasks with a title
 2. Task Deletion: Delete tasks
