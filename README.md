@@ -20,6 +20,7 @@ Visit live app : https://flare-link-assignment.vercel.app
 ## Extra features from my side
 - Editing a task: after creation of a task, a user can edit/update it.
 - dark mode and light mode themes.
+- deployed the app to vercel for ease in reviewing.
 
 ## Tech Stack
 - React 18
