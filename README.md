@@ -2,7 +2,7 @@
 
 A sleek and efficient task management application built with React, TypeScript, and Vite.
 
-Visit live app : https://flare-link-assignment.vercel.app
+Visit live app : https://modern-task-manager.vercel.app
  
 
 ## Basic Features
